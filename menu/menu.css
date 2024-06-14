@@ -4,13 +4,22 @@
 }
 /*======================MAIN NAVIGATION======================*/
 .header-color-class {
-  background: #42936c;
+  background: rgba(52, 159, 2, 0.179);
   /* border-radius: 500px;
   margin-top: 20px;
   position: fixed;
   z-index: 100;
   left: 50%;
   transform: translateX(-50%); */
+}
+.header-color-class::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(52, 159, 2, 0.179); /* Màu nền trắng đục */
+  z-index: -1; /* Đặt lớp nền dưới nội dung */
 }
 
 .main-navigation .toggle-button {
@@ -70,7 +79,7 @@ span.iconmenu {
 @media screen and (min-width: 1025px) {
   .header-color-class {
     width: calc(100% - 200px);
-    background: rgba(52, 159, 2, 0.96); /* Màu nền với độ mờ 30% */
+    background: rgba(76, 170, 33, 0.968); /* Màu nền với độ mờ 30% */
     border-radius: 500px;
     margin-top: 20px;
     position: fixed;
@@ -88,7 +97,7 @@ span.iconmenu {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.385); /* Màu nền trắng đục */
+    background: rgba(255, 255, 255, 0.399); /* Màu nền trắng đục */
     border-radius: 500px; /* Giữ viền bo tròn */
     z-index: -1; /* Đặt lớp nền dưới nội dung */
 }
