@@ -1,5 +1,7 @@
 jQuery(document).ready(function($) {
-
+    $('#custom-search-button').on('click', function() {
+        $('.form_search_wordpress').toggle();
+    });
     //-------------------------------My Menu-----------------
 
     //main navigation

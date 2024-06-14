@@ -131,7 +131,11 @@ function zenflow_yoga_primary_nagivation(){ ?>
                     ) );
                 ?>
             </div>
+        
         </div>
+        <!-- <div class="search-container">
+            <?php get_search_form(); ?>
+        </div> -->
         <button class="toggle-button" data-toggle-target=".main-menu-modal" data-toggle-body-class="showing-main-menu-modal" aria-expanded="false" data-set-focus=".close-main-nav-toggle">
             <span class="toggle-bar"></span>
             <span class="toggle-bar"></span>
