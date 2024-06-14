@@ -1,6 +1,6 @@
 /*-------------------------My Menu-----------------------*/
 :root {
-  --primary-color: #0094FF;
+  --primary-color: #0094ff;
 }
 /*======================MAIN NAVIGATION======================*/
 .header-color-class {
@@ -76,7 +76,12 @@ span.iconmenu {
   }
   .header-color-class {
     width: calc(100% - 200px);
-    background: #97ce7e;; /* Màu nền với độ mờ 30% */
+    background: rgba(118, 196, 82, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 500px;
     margin-top: 20px;
     position: fixed;
@@ -131,7 +136,6 @@ span.iconmenu {
   top: 0;
   padding-left: 3px;
 }
-
 
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focused > ul {
@@ -216,9 +220,7 @@ span.iconmenu {
     text-align: center;
   }
   .wrap-search-action {
-
   }
-
 
   /* ---------My Menu------------------   */
 
@@ -445,5 +447,4 @@ span.iconmenu {
   .main-navigation .toggle-button .toggle-bar:first-of-type {
     top: -17px;
   }
-
 }
