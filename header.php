@@ -57,14 +57,14 @@
           <?php endif; ?>
         </div>
       </div>
-      <div class="col-lg-8 col-12">
+      <div class="col-lg-9 col-12">
         <header id="Main-head-class" class="site-header">
           <!-- before header hook -->
           <?php do_action('zenflow_yoga-_before_header'); ?>
           <?php get_template_part('template-parts/header/header-file'); ?>
         </header>
       </div>
-      <div class="col-lg-2 col-12">
+      <div class="col-lg-1 col-12">
         <div class="wrap-search-action">
           <button type="button" id="custom-search-button" class="custom-search-button">
             <span>Search</span>

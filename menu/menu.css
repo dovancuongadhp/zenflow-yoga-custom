@@ -4,22 +4,14 @@
 }
 /*======================MAIN NAVIGATION======================*/
 .header-color-class {
-  background: rgba(52, 159, 2, 0.179);
+  background: #97ce7e;
+  box-shadow: 0 4px 8px rgba(23, 23, 23, 0.144);
   /* border-radius: 500px;
   margin-top: 20px;
   position: fixed;
   z-index: 100;
   left: 50%;
   transform: translateX(-50%); */
-}
-.header-color-class::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(52, 159, 2, 0.179); /* Màu nền trắng đục */
-  z-index: -1; /* Đặt lớp nền dưới nội dung */
 }
 
 .main-navigation .toggle-button {

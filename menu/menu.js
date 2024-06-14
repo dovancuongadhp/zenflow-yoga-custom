@@ -1,6 +1,11 @@
 jQuery(document).ready(function($) {
+    // search button click
     $('#custom-search-button').on('click', function() {
         $('.form_search_wordpress').toggle();
+        if ($('.form_search_wordpress').is(':visible')) {
+            // Focus on the search input field
+            $('.form_search_wordpress .search-form input[type="search"]').focus();
+        }
     });
     //-------------------------------My Menu-----------------
 

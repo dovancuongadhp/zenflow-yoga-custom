@@ -443,7 +443,7 @@ h2.post-title:hover {
   gap: 10px;
 }
 .form_search_wordpress {
-  /* display: none; */
+  display: none;
   position: absolute;
   width: 100%;
   margin-top: 20px;
