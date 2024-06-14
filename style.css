@@ -440,7 +440,7 @@ h2.post-title:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
 }
 .form_search_wordpress {
   display: none;
@@ -476,7 +476,8 @@ h2.post-title:hover {
 }
 
 .custom-search-button {
-  padding: 15px 20px;
+  min-width: 50px;
+  padding: 15px;
   background-color: #4a8cd0;
   color: #fff;
   border: none;
@@ -485,7 +486,7 @@ h2.post-title:hover {
 }
 
 .custom-search-button:hover {
-  background-color: #0056b3;
+  background-color: #3670aa;
 }
 @media screen and (max-width: 1024px) {
     .form_search_wordpress {
@@ -613,6 +614,10 @@ h1.site-title a:hover {
   position: relative;
   background-size: cover;
   background-position: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1.site-title a {
@@ -1583,4 +1588,11 @@ footer.site-footer p {
 
 .post-thumbnail img:hover {
   transform: scale(0.8);
+}
+@media only screen and (min-width: 1024px) {
+  .head-banner-img {
+    display: flex;
+    justify-content: start;
+  }
+  
 }

@@ -32,7 +32,7 @@
   position: relative;
   margin-bottom: 0;
   font-weight: 700;
-  margin-top: 12px;
+  margin: 12px 0;
 }
 
 .main-navigation ul li a {
@@ -69,6 +69,11 @@ span.iconmenu {
 }
 
 @media screen and (min-width: 1025px) {
+  .main-navigation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .header-color-class {
     width: calc(100% - 200px);
     background: rgba(76, 170, 33, 0.968); /* Màu nền với độ mờ 30% */
@@ -121,6 +126,7 @@ span.iconmenu {
   -webkit-transition: all ease 0.35s;
   -moz-transition: all ease 0.35s;
   transition: all ease 0.35s;
+  background-color: white;
 }
 
 .main-navigation ul li:hover > ul,
@@ -136,6 +142,7 @@ span.iconmenu {
   top: 0;
   padding-left: 3px;
 }
+
 
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focused > ul {
@@ -219,7 +226,11 @@ span.iconmenu {
   .display_only {
     text-align: center;
   }
- 
+  .wrap-search-action {
+
+  }
+
+
   /* ---------My Menu------------------   */
 
   /*=====================
@@ -445,4 +456,5 @@ span.iconmenu {
   .main-navigation .toggle-button .toggle-bar:first-of-type {
     top: -17px;
   }
+
 }
