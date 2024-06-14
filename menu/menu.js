@@ -45,13 +45,13 @@ jQuery(document).ready(function($) {
       if (st > lastScrollTop && st > navbarHeight && windowWidth >= 1024){
         // Cuộn xuống
         if (navbarVisible) {
-          $('#navbar-saomai').hide();
+            $('.header-color-class').hide();
           navbarVisible = false;
         }
       } else {
         // Cuộn lên
         if (!navbarVisible && windowWidth >= 1024) {
-          $('#navbar-saomai').show();
+          $('.header-color-class').stop(true, true).fadeIn();
           navbarVisible = true;
         }
       }

@@ -1,16 +1,16 @@
 /*-------------------------My Menu-----------------------*/
-:root{
-    --primary-color: #0454BA
+:root {
+  --primary-color: #0094FF;
 }
 /*======================MAIN NAVIGATION======================*/
 .header-color-class {
   background: #42936c;
-  border-radius: 500px;
+  /* border-radius: 500px;
   margin-top: 20px;
   position: fixed;
   z-index: 100;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
 }
 
 .main-navigation .toggle-button {
@@ -68,6 +68,30 @@ span.iconmenu {
 }
 
 @media screen and (min-width: 1025px) {
+  .header-color-class {
+    width: calc(100% - 200px);
+    background: rgba(52, 159, 2, 0.96); /* Màu nền với độ mờ 30% */
+    border-radius: 500px;
+    margin-top: 20px;
+    position: fixed;
+    z-index: 1000; /* Giá trị z-index lớn hơn để đảm bảo hiển thị trên các phần tử khác */
+    top: 20px; /* Đặt vị trí từ top */
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Viền trắng mờ với độ mờ 50% */
+  }
+  .header-color-class::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.385); /* Màu nền trắng đục */
+    border-radius: 500px; /* Giữ viền bo tròn */
+    z-index: -1; /* Đặt lớp nền dưới nội dung */
+}
   .main-navigation .primary-menu-list,
   .main-navigation ul ul {
     display: block !important;
@@ -191,20 +215,15 @@ span.iconmenu {
     position: relative;
     top: 0px;
   }
+  .display_only {
+    text-align: center;
+  }
 
   /* ---------My Menu------------------   */
 
   /*=====================
     MAIN NAVIGATION
     =====================*/
-  .header-color-class {
-    border-radius: initial;
-    margin-top: initial;
-    color: red;
-    left: initial;
-    transform: initial;
-    top: 0;
-  }
   .main-navigation {
     position: relative;
     margin-left: -2%;
@@ -419,6 +438,9 @@ span.iconmenu {
 
 /* Fixes for the toggle button */
 @media only screen and (max-width: 1024px) {
+  .display_only {
+    text-align: center;
+  }
   .main-navigation .toggle-button .toggle-bar:first-of-type {
     top: -17px;
   }

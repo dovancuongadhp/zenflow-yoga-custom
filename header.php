@@ -25,10 +25,10 @@
   <?php do_action('wp_body_open'); ?>
   <a class="skip-link screen-reader-text" href="#content"><?php echo esc_html__('Skip to content', 'zenflow-yoga'); ?></a>
 
-<div class="container-md header-color-class" >
+<div class="container-fluid header-color-class" >
   <div class="row" id="navbar-saomai">
     
-    <div class="col-lg-4 col-12">
+    <div class="col-lg-2 col-12">
        <div class="head-banner-img">
         <?php if (get_header_image()) : ?>
           <div class="site-img-header">
@@ -56,7 +56,7 @@
         <?php endif; ?>
       </div>
     </div>
-    <div class="col-lg-8 col-12">
+    <div class="col-lg-10 col-12">
        <header id="Main-head-class" class="site-header">
             <!-- before header hook -->
             <?php do_action('zenflow_yoga-_before_header'); ?>
