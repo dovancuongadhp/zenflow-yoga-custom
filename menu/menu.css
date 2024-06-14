@@ -76,7 +76,7 @@ span.iconmenu {
   }
   .header-color-class {
     width: calc(100% - 200px);
-    background: rgba(76, 170, 33, 0.968); /* Màu nền với độ mờ 30% */
+    background: #97ce7e;; /* Màu nền với độ mờ 30% */
     border-radius: 500px;
     margin-top: 20px;
     position: fixed;
@@ -87,17 +87,6 @@ span.iconmenu {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border: 2px solid rgba(255, 255, 255, 0.5); /* Viền trắng mờ với độ mờ 50% */
   }
-  .header-color-class::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.399); /* Màu nền trắng đục */
-    border-radius: 500px; /* Giữ viền bo tròn */
-    z-index: -1; /* Đặt lớp nền dưới nội dung */
-}
   .main-navigation .primary-menu-list,
   .main-navigation ul ul {
     display: block !important;
