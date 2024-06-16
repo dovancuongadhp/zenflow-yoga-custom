@@ -473,9 +473,15 @@ h2.post-title:hover {
   border-bottom-right-radius: 8px;
   background-color: white;
   height: 40px;
+  display: flex;
+  align-items: center;
+  color: gray;
 }
 
 .custom-search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 50px;
   padding: 15px;
   background-color: #4a8cd0;

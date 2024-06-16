@@ -67,7 +67,8 @@
       <div class="col-lg-2 col-12">
         <div class="wrap-search-action">
           <button type="button" id="custom-search-button" class="custom-search-button">
-            <span>Search X</span>
+          <span>Search</span>
+          <i class="material-icons">search</i>
           </button> 
           <button type="button" id="custom-search-button" class="custom-search-button">
             <span>VN</span>

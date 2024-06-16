@@ -97,6 +97,10 @@ function zenflow_yoga_enqueue_assets() {
 add_action( 'wp_enqueue_scripts', 'zenflow_yoga_enqueue_assets' );
 
 
+function load_material_icons() {
+    wp_enqueue_style('material-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons');
+}
+add_action('wp_enqueue_scripts', 'load_material_icons');
 
 
 //-------------------------Header Code--------------------------------
