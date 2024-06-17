@@ -7,6 +7,15 @@ jQuery(document).ready(function($) {
             $('.form_search_wordpress .search-form input[type="search"]').focus();
         }
     });
+    $(document).on('click', function(event) {
+        var $target = $(event.target);
+        if (!$target.closest('.form_search_wordpress').length && !$target.closest('#custom-search-button').length) {
+            if ($('.form_search_wordpress').is(':visible')) {
+                $('.form_search_wordpress').hide();
+            }
+        }
+    });
+    
     //-------------------------------My Menu-----------------
 
     //main navigation
@@ -32,7 +41,17 @@ jQuery(document).ready(function($) {
     }).on( 'blur', function() {
         $(this).parents('li').removeClass('focused');
     });
-
+    // Hide navbar when clicking outside
+    $(document).on('click', function(event) {
+        var $target = $(event.target);
+        if (!$target.closest('.main-navigation').length && !$target.closest('.toggle-button').length) {
+            if ($('.primary-menu-list').is(':visible')) {
+                $('.primary-menu-list').animate({
+                    width: 'toggle',
+                });
+            }
+        }
+    });
 
     //--------------------------My Menu End--------------
     var lastScrollTop = 0;
