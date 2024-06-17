@@ -624,6 +624,7 @@ h1.site-title a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* flex: 1; */
 }
 
 h1.site-title a {
@@ -1601,4 +1602,18 @@ footer.site-footer p {
     justify-content: start;
   }
   
+}
+
+@media (max-width: 1024px) {
+ #navbar-saomai .col-lg-8.col-12 {
+  display: flex;
+  align-items: center;
+  flex: 1;
+ }
+ #navbar-saomai .col-lg-2.col-12:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex: 1;
+ }
 }
