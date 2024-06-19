@@ -43,15 +43,18 @@ jQuery(document).ready(function($) {
     });
     // Hide navbar when clicking outside
     $(document).on('click', function(event) {
-        var $target = $(event.target);
-        if (!$target.closest('.main-navigation').length && !$target.closest('.toggle-button').length) {
-            if ($('.primary-menu-list').is(':visible')) {
-                $('.primary-menu-list').animate({
-                    width: 'toggle',
-                });
+        if ($(window).width() <= 1024) {
+            var $target = $(event.target);
+            if (!$target.closest('.main-navigation').length && !$target.closest('.toggle-button').length) {
+                if ($('.primary-menu-list').is(':visible')) {
+                    $('.primary-menu-list').animate({
+                        width: 'toggle',
+                    });
+                }
             }
         }
     });
+    
 
     //--------------------------My Menu End--------------
     var lastScrollTop = 0;
