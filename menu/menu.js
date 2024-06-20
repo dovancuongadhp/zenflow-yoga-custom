@@ -15,34 +15,8 @@ jQuery(document).ready(function($) {
             }
         }
     });
-    
-    //-------------------------------My Menu-----------------
-
-    //main navigation
-    $('.main-navigation ul li.menu-item-has-children').find('> a').after('<button class="submenu-toggle"><span class="iconmenu">+</span></button>');
-    $('.main-navigation ul li button.submenu-toggle').on('click', function () {
-        $(this).parent('li.menu-item-has-children').toggleClass('active');
-        $(this).siblings('.sub-menu').stop(true, false, true).slideToggle();
-    });
-    $('.main-navigation .toggle-button').on( 'click', function(){
-        $('.primary-menu-list').animate({
-            width: 'toggle',
-        });
-    });
-    $('.main-navigation .close').on( 'click', function(){
-        $('.primary-menu-list').animate({
-            width: 'toggle',
-        });
-    });
-
-    //for accessibility
-    $('.main-navigation ul li a, .main-navigation ul li button').on( 'focus', function() {
-        $(this).parents('li').addClass('focused');
-    }).on( 'blur', function() {
-        $(this).parents('li').removeClass('focused');
-    });
-    // Hide navbar when clicking outside
-    $(document).on('click', function(event) {
+     // Hide navbar when clicking outside
+     $(document).on('click', function(event) {
         if ($(window).width() <= 1024) {
             var $target = $(event.target);
             if (!$target.closest('.main-navigation').length && !$target.closest('.toggle-button').length) {
@@ -55,8 +29,7 @@ jQuery(document).ready(function($) {
         }
     });
     
-
-    //--------------------------My Menu End--------------
+    // ẩn navbar khi cuộn xuống
     var lastScrollTop = 0;
     var delta = 5;
     var navbarHeight = $('#navbar-saomai').outerHeight();
@@ -87,6 +60,35 @@ jQuery(document).ready(function($) {
   
       lastScrollTop = st;
     });
+    
+    //-------------------------------My Menu-----------------
+
+    //main navigation
+    $('.main-navigation ul li.menu-item-has-children').find('> a').after('<button class="submenu-toggle"><span class="iconmenu">+</span></button>');
+    $('.main-navigation ul li button.submenu-toggle').on('click', function () {
+        $(this).parent('li.menu-item-has-children').toggleClass('active');
+        $(this).siblings('.sub-menu').stop(true, false, true).slideToggle();
+    });
+    $('.main-navigation .toggle-button').on( 'click', function(){
+        $('.primary-menu-list').animate({
+            width: 'toggle',
+        });
+    });
+    $('.main-navigation .close').on( 'click', function(){
+        $('.primary-menu-list').animate({
+            width: 'toggle',
+        });
+    });
+
+    //for accessibility
+    $('.main-navigation ul li a, .main-navigation ul li button').on( 'focus', function() {
+        $(this).parents('li').addClass('focused');
+    }).on( 'blur', function() {
+        $(this).parents('li').removeClass('focused');
+    });
+   
+
+    //--------------------------My Menu End--------------
 });
 
 
