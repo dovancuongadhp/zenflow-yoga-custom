@@ -37,7 +37,7 @@
 
 .main-navigation ul li a {
   color: #ffffff;
-  padding: 15px 20px;
+  padding: 15px 8px;
   display: inline-block;
 }
 
@@ -227,6 +227,12 @@ span.iconmenu {
   /*=====================
     MAIN NAVIGATION
     =====================*/
+
+  .main-navigation ul li a {
+    color: #ffffff;
+    padding: 15px 20px;
+    display: inline-block;
+  }
   .main-navigation {
     position: relative;
     margin-left: -2%;
