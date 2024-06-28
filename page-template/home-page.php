@@ -7,7 +7,7 @@
 <?php get_header(); ?>
 
 
-<main id="content">
+<main id="">
     <div id="content" class="container-fluid">
 
         <?php do_action( 'zenflow_yoga_before_banner-sectionone' ); ?>

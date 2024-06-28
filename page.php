@@ -11,7 +11,7 @@ get_header();
 ?>
 
 <main id="content" role="main">
-	<div class="container-fluid">
+	<div>
 		<div class="wrapper">
             <div id="content" class="content-area theme-sticky-component">
                 <?php
